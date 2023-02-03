@@ -4,7 +4,7 @@ import React from 'react'
 import Data from './Data'
 
 /* Importando Component Treino_02 */
-import Treino_02 from './Treino_02'
+import Treino_02 from './Classe'
 
 export default function Body() {
     const cnl2 = () => {

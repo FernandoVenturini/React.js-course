@@ -1,21 +1,18 @@
 import React from "react"
 
-/* Importando Components */
-import Header from './components/Header'
-import Body from './components/Body'
-import Treino_01 from './components/Treino_01'
-import Treino_02 from "./components/Treino_02"  
+/* Importando Components */ 
 
 export default function App() {
+	const css = {
+		color: 'blue',
+		fontSize: '2em'
+	}
 
-  return(
-    <>
-      <Header/>
-      <Body/>
-      <Treino_01/>
-      <Treino_02/>
-    </>
-  )
-
+	return(
+		<>
+			<h1 style={{color: '#f00', fontSize: '3em'}}>CFB Cursos</h1>
+			<h2 style={css}>Curso de React</h2>
+		</>
+	)
 }
 

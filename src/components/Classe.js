@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Treino_02(props) {
+export default function Classe(props) {
 
     return(
         <>

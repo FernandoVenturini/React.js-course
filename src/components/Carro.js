@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Treino_01() {
+export default function Carro() {
 
     return(
         <>

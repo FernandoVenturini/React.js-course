@@ -1,29 +1,25 @@
-import React from "react"
-
-/* Importando CSS */
-import './App.css'
-
-/* Importando Components */ 
-import Watch from "./components/Watch"
+import React, { useState } from 'react'
+import Led from './components/Led'
 
 export default function App() {
-	const css = {
-		color: 'blue',
-		fontSize: '2em'
+
+	const [ligado, setLigado]  = useState(false);
+
+	const cancelar = (obj) => {
+		return obj.preventDefault()
+		//return false
 	}
 
 	return(
 		<>
-			<section className="caixa">
-
-			<Watch/>
-
-				<h1 style={{color: '#f00', fontSize: '3em'}}>CFB Cursos</h1>
-				<h2 style={css}>Curso de React</h2>
-				<p className="texto">Se inscreva no canal</p>
-				<a href="https://lvfcode.com">&lt;LVF_Code&gt;</a>
-			</section>
+			<Led ligado={ligado} setLigado={setLigado}/>
+			<a
+				href='https://lvfcode.com'
+				target='_blank'
+				onClick={(e) => cancelar(e)}
+			>
+				LVF_Code
+			</a>
 		</>
-	)
+	);
 }
-
